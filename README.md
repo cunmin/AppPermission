@@ -13,7 +13,7 @@ allprojects {
 }
 
 dependencies {
-    implementation XXX
+    implementation 'com.littleyellow:app-permission:1.0.0'
 }
 ```
 
