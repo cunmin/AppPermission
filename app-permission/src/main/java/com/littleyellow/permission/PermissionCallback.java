@@ -7,11 +7,6 @@ import java.util.List;
 public interface PermissionCallback {
 
     /**
-     * 权限请求成功
-     */
-    void onSuccess();
-
-    /**
      * 用户拒绝了权限请求, 权限请求失败, 但还可以继续请求该权限
      * @param permissions 请求失败的权限名
      */
@@ -23,5 +18,10 @@ public interface PermissionCallback {
      * @param permissions 请求失败的权限名
      */
     void onAskNeverAgain(Intent intent,List<String> permissions);
+
+    /**
+     * 权限请求成功
+     */
+    void onSuccess();
 
 }
